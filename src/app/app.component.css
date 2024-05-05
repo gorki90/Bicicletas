@@ -1,0 +1,252 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* colores
+#12486B
+#419197
+#78D6C6
+#F5FCCD */
+
+body{
+margin: 0%;
+padding: 0%;
+background-color: #12486B;
+color:#F5FCCD;
+height: 100vh;
+width: 100vw;
+overflow: auto;
+
+}
+
+.navbar{
+    background-color: #78D6C6;
+}
+
+.nav-item{
+    font-size:larger;
+}
+
+.nav-item:hover{
+    color:#419197;
+    scale:1.1;
+}
+.active {
+    font-weight: bold;
+    color: #419197;
+  }
+
+.form-control{
+    border-radius: 50px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+@media (min-width: 768px) {
+    .form-control {
+        width: 50%;
+        margin-left: 25rem;
+}
+}
+.form-control:focus{
+    border-color: #78D6C6;
+}
+
+.contacto-form{
+    margin-top: 1.5rem;
+}
+
+.tit-contacto, .tit-registro, .tit-inicio{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-registro{
+    margin-top: 2rem;
+}
+
+.img-inicio{
+    border-radius: 50px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .img-fluid {
+      max-width: 40rem;
+      margin-left: 5rem;
+}
+  }
+
+.img-inicio:hover{
+    filter: blur(2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro{
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-left: 1rem;
+}
+
+.btn{
+    background-color: #419197;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.btnSocial{
+    display: block;
+    background-color: #419197;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #F5FCCD;
+    margin-top: 1rem;
+    border-style: none; 
+    margin-top: 2rem;
+}
+
+.btnSocial:hover{
+    background-color: #78D6C6;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .btnSocial {
+      margin-left: 25rem;
+      max-width: 21rem;
+}
+  }
+
+.social-img {
+width: 2rem;
+height: 2rem;
+}
+
+.btn1{
+    background-color: #419197;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #F5FCCD;
+    margin-top: 1rem;
+    border-style: none;
+}
+
+.btn1:hover{
+    background-color: #78D6C6;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #78D6C6;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        translate: 25rem;
+}
+  }
+
+.map {
+  width: 100%;
+  height: 40rem;
+  background-color: #12486B;
+}
+
+
+footer{
+  height: 3.5rem;
+  margin-top: 2rem;
+  background-color: #78D6C6;
+}
+
+.stations{
+    list-style: none;
+    border-color: #419197;
+    border-style: solid;
+    width: 20rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stations:hover{
+    background-color: #419197;
+    font-weight: bolder;
+}
+
+#iniciales{
+    margin-top: 1rem;
+}
+
+.img-head{
+    width: 100%;
+    height: 10rem;
+    background-image: url(/assets/img/paises.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.img-head2{
+    width: 100%;
+    height: 10rem;
+    background-image: url(/assets/img/contacto.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-head3{
+    width: 100%;
+    height: 10rem;
+    background-image: url(/assets/img/registro.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-head4{
+    width: 100%;
+    height: 10rem;
+    background-image: url(/assets/img/panor.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-buscar{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5rem;
+}
+
+.img-cont{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .img-cont {
+    
+    margin-top: 0.5rem;
+    margin-left: 20rem;
+}
+  }
+
+.img-cont:hover{
+scale: 1.2;
+}
+
+.p-cont{
+    margin-top: 1rem;
+}

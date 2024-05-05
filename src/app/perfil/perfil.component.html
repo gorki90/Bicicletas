@@ -1,0 +1,45 @@
+<div class="img-head3"></div>
+<h3 class="tit-registro text-center">Perfil</h3>
+<h4 class="text-center">Login</h4>
+<form class="form-registro" (ngSubmit)="login()">
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="datos1.username1" class="form-control" id="username1" name="nombre1" placeholder="Nombre de Usuario">
+      </div>
+    <div class="mb-3">
+      <input type="email" [(ngModel)]="datos1.email1" class="form-control" id="email1" name="email1" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <input type="password" [(ngModel)]="datos1.password1" class="form-control" id="password1" name="contrasenia1" placeholder="Contraseña">
+    </div>
+    <button type="submit" class="btn">Iniciar sesión</button>
+    <p *ngIf="mensaje" class="text-center">{{ mensaje }}</p>
+  </form>
+  <h4 class="text-center">Modificar cuenta</h4>
+  <form class="form-registro" (ngSubmit)="modify()">
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="datos2.username2" class="form-control" id="username2" name="nombre2" placeholder="Nombre de Usuario">
+      </div>
+    <div class="mb-3">
+      <input type="email" [(ngModel)]="datos2.email2" class="form-control" id="email2" name="email2" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <input type="password" [(ngModel)]="datos2.password2" class="form-control" id="password2" name="contrasenia2" placeholder="Contraseña">
+    </div>
+    <button type="submit" class="btn">Modificar datos</button>
+  </form>
+  <p *ngIf="mensaje2" class="text-center">{{ mensaje2 }}</p>
+  <h4 class="text-center">Eliminar cuenta</h4>
+  <form class="form-registro" (ngSubmit)="borrarCuenta()">
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="datos3.username3" class="form-control" id="username3" name="nombre3" placeholder="Nombre de Usuario">
+      </div>
+    <div class="mb-3">
+      <input type="email" [(ngModel)]="datos3.email3" class="form-control" id="email3" name="email3" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <input type="password" [(ngModel)]="datos3.password3" class="form-control" id="password3" name="contrasenia3" placeholder="Contraseña">
+    </div>
+    <button type="submit" class="btn">Borrar cuenta</button>
+  </form>
+
+  <p *ngIf="mensaje2" class="text-center">{{ mensaje3 }}</p>

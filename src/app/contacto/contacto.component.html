@@ -1,0 +1,23 @@
+<div class="img-head2"></div>
+<h3 class="tit-contacto text-center">¿Tienes dudas? ¡Contacta con nosotros!</h3>
+
+<form class="contacto-form" (ngSubmit)="contactar()">
+    <div class="mb-3">
+      <input type="nombre" [(ngModel)]="dudas.nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <input type="email" [(ngModel)]="dudas.email" class="form-control" id="email" name="email" placeholder="Email">
+      </div>
+    <div class="mb-3">
+          <textarea class="form-control" [(ngModel)]="dudas.comentario" id="comentario" name="comentario" rows="1" placeholder="Comentario"></textarea>
+        </div>
+    <button type="submit" class="btn justify-content-end">Enviar</button>
+  </form>
+
+  <p *ngIf="mensaje" class="text-center">{{ mensaje }}</p>
+
+
+<h4 class="text-center p-cont">Puedes localizarnos también mediante las siguientes vías:</h4>
+<img class="img-fluid img-cont" src="assets/img/mensaje.png">
+<img class="img-fluid img-cont" src="assets/img/correo.png">
+<img class="img-fluid img-cont" src="assets/img/llamada.png">

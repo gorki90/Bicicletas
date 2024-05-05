@@ -1,0 +1,23 @@
+<div class="img-head3"></div>
+<h3 class="tit-registro text-center">Registrarse</h3>
+
+<form class="form-registro" (ngSubmit)="registrarUsuario()">
+    <div class="mb-3">
+        <input type="text" [(ngModel)]="user.username" class="form-control" id="username" name="nombre" placeholder="Nombre de Usuario">
+      </div>
+    <div class="mb-3">
+      <input type="email" [(ngModel)]="user.email" class="form-control" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="contrasenia" placeholder="Contraseña">
+    </div>
+    <button type="submit" class="btn">Registrarse</button>
+  </form>
+
+  <p *ngIf="mensaje" class="text-center">{{ mensaje }}</p>
+
+  <button type="submit" class="btnSocial">Registráte con Google<img class="social-img img-fluid" src="assets/img/google.png"></button>
+  <button type="submit" class="btnSocial">Registráte con Facebook<img class="social-img img-fluid" src="assets/img/facebook.png"></button>
+  <form (ngSubmit)="irAlPerfil()">
+  <button type="submit" class="btnSocial">Ya estoy registrado. Acceder a mi perfil</button>
+  </form>

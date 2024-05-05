@@ -1,0 +1,17 @@
+[
+    {
+      "username": "gorki90",
+      "email": "gorkarual90@gmail.com",
+      "password": "1234"
+    },
+    {
+      "username": "nikosMp",
+      "email": "nikosmp@gmail.com",
+      "password": "contraseña2"
+    },
+    {
+        "username": "prueba",
+        "email": "prueba@gmail.com",
+        "password": "prueba"
+    }
+]

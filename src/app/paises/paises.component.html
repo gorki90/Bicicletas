@@ -1,0 +1,16 @@
+<div class="img-head">
+
+</div>
+<form class="d-flex buscador" (ngSubmit)="buscarPais()">
+    <input class="form-control me-2" id="iniciales" name="iniciales" [(ngModel)]="iniciales" type="search" placeholder="Buscar" aria-label="Buscar">
+    <button class="btn1" type="submit"><img class="img-fluid img-buscar" src="assets/img/buscar.png"></button>
+  </form>
+
+<div class="container-fluid" *ngFor="let pais of estacionesPorPais | keyvalue">
+    <h3 class="tit-pais">{{ pais.key }}</h3>
+    <ul class="list-group">
+      <li class="stations list-group-item" *ngFor="let estacion of pais.value">
+        {{ estacion.name }} - {{ estacion.location.city }}
+      </li>
+    </ul>
+  </div>
